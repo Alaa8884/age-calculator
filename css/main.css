@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(80, 96, 247), rgb(6, 31, 68))
+}
+.app {
+  width: 90%;
+  max-width: 550px;
+  margin: 100px auto 0;
+  padding: 15px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  box-shadow: 8px 8px 15px #d3c508, -8px -7px 20px #d3c508;
+}
+.app h1 {
+  color: #fff;
+  font-weight: 60;
+  font-size: 30px;
+  margin: 20px 0 30px;
+}
+.app h1 span {
+  color: #f1e20c;
+}
+.app .input-box {
+  background: #555;
+  padding: 25px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input-box .date {
+  flex: 1;
+  margin-right: 25px;
+  padding: 15px 18px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  position: relative;
+}
+.input-box .date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background-position: calc(100% - 10px);
+  background-size: 30px;
+  cursor: pointer;
+}
+.input-box button {
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  color: #333;
+  font-weight: 600;
+  background: #f8ec3b;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.input-box button:hover {
+  background: radial-gradient(circle, rgb(17, 119, 153) 0%, rgb(239, 250, 93) 100%);
+  color: #fff;
+}
+.result {
+  color: #fff;
+}
+.result span {
+  color: #d3c508;
+}
+         
+         .btn-grad {
+            background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
